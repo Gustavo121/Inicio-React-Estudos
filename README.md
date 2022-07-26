@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+## O que é o React
+React é uma biblioteca JS, para web para criar componentes;
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+getElementById('id') ❌
+- [x] No React você cria os componentes.
+- [x] Componente nada mais é do que uma função que retorna uma TAG HTML.
+- [x] React é uma biblioteca para você criar arquivos JSX ou JS caso você crie JS ele auto interpreta como JSX
+- [x] O que é o JSX ? É mistura de javascript com HTML. Você pode escrever HTML no Javascript e colocar lógicas etc...
+- [x] Components react devem retornar apenas uma coisa mas não quer dizer que é somente 1 coisa mesmo, vc pode envolver e ter varias coisas la dentro
+    como por exemplo o fragment: <>abc</> ou <React.Frament>abc</React.Frament>
+- [x] Componentes React quando você cria a função ou uma arrow function você sempre tem que colocar a primeira letra em maiusculo
 
-## Available Scripts
+## Como o React Funciona?
+- SPA (Single Page Aplication)
+- React ele cria um DOM virtual (Virtual DOM)
+- Um exemplo HTML + JS: em uma página existe um botão de somar que ele vai exibir na tela o numero ai quando clica ele soma no numero.
+              porém quando você clicar no número ele vai desconstruir o HTML inteiro MESMO COISA QUE NÃO TEM NADA VER COM O QUE ELE TA FAZENDO.
+              
+- Um exemplo em React: seguindo o mesmo exemplo do botão, Ele cria um DOM virtual. Quando a pessoa apertar o botão ele vai comparar o DOM vitural
+                       com o DOM que ta no HTML e vai mudar apenas o que ta de diferente. Ele não vai desconstruir o HTML inteiro pra depois te retornar
+                       ele vai mudar apenas aonde foi alterado.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
